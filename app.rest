@@ -1,0 +1,22 @@
+@prefix = comercio
+GET http://localhost:3000/{{prefix}}/listado
+
+###
+POST http://localhost:3000/{{prefix}}//registrar
+Content-Type: application/json
+
+{
+    "nombre":"Carlos Duran",
+    "direccion": "Direccion"
+}
+
+###
+PUT http://localhost:3000/{{prefix}}/613b860c60a5a0de7c71257f
+Content-Type: application/json
+
+{
+    "nombre":"Carlos Alas",
+    "direccion": "Direccion"
+}
+###
+DELETE  http://localhost:3000/{{prefix}}/613b860c60a5a0de7c71257f
